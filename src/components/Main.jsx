@@ -5,26 +5,29 @@ import HighchartsReact from 'highcharts-react-official'
 
 export default function Main() {
     const [bankroll, setBankroll] = useState(2000);
-    const [profitTarget, setProfitTarget] = useState(100);
-    const [winPercentage, setWinPercentage] = useState(60);
+    const [profitTarget, setProfitTarget] = useState(1000);
+    const [winPercentage, setWinPercentage] = useState(55);
     const [wagerPercentage, setWagerPercentage] = useState(20);
     const [options, setOptions] = useState({
         title: {
           text: 'Line Graph'
         },
         series: [{
-            name: 'Simulation',
+            name: 'Bankroll',
             data: []
         }],
         xAxis: {
             title: {
-                text: 'Number of Bets'
+                text: 'Number of bets'
             }
         },
         yAxis: {
             title: {
-                text: 'Total Bankroll'
+                text: 'Dollars'
             }
+        },
+        credits: {
+            enabled: false
         },
     });
 
@@ -35,11 +38,7 @@ export default function Main() {
         const bankrollData = [];
         let totalBankroll = bankroll;
 
-        while ((totalBankroll < bankroll + profitTarget) && bankrollData.length < 10001) {
-            if (totalBankroll <= 0) {
-                break;
-            }
-
+        while (totalBankroll > 1 && (totalBankroll < bankroll + profitTarget) && bankrollData.length < 10001) {
             const bet = totalBankroll *  wagerDecimal;
 
             if (isBetWon(winDecimal)) {
@@ -53,7 +52,7 @@ export default function Main() {
         }
 
         setOptions({ series: [{ 
-            name: 'Simulation',
+            name: 'Bankroll',
             data: bankrollData
         }] })
     }
@@ -83,7 +82,7 @@ export default function Main() {
 
     return (
         <div>
-            <h1>Kelly's Law</h1>
+            <h1>Investment Strategy</h1>
             <div className="information-box">
                 <div className="info-detail">
                     <label>Bankroll</label>
