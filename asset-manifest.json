@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/InvestmentStrategy/static/css/main.edb1c139.chunk.css",
+    "main.js": "/InvestmentStrategy/static/js/main.181ac3ab.chunk.js",
+    "main.js.map": "/InvestmentStrategy/static/js/main.181ac3ab.chunk.js.map",
+    "runtime-main.js": "/InvestmentStrategy/static/js/runtime-main.e70078ef.js",
+    "runtime-main.js.map": "/InvestmentStrategy/static/js/runtime-main.e70078ef.js.map",
+    "static/js/2.6a5bcd66.chunk.js": "/InvestmentStrategy/static/js/2.6a5bcd66.chunk.js",
+    "static/js/2.6a5bcd66.chunk.js.map": "/InvestmentStrategy/static/js/2.6a5bcd66.chunk.js.map",
+    "static/js/3.1a22d128.chunk.js": "/InvestmentStrategy/static/js/3.1a22d128.chunk.js",
+    "static/js/3.1a22d128.chunk.js.map": "/InvestmentStrategy/static/js/3.1a22d128.chunk.js.map",
+    "index.html": "/InvestmentStrategy/index.html",
+    "static/css/main.edb1c139.chunk.css.map": "/InvestmentStrategy/static/css/main.edb1c139.chunk.css.map",
+    "static/js/2.6a5bcd66.chunk.js.LICENSE.txt": "/InvestmentStrategy/static/js/2.6a5bcd66.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/InvestmentStrategy/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e70078ef.js",
+    "static/js/2.6a5bcd66.chunk.js",
+    "static/css/main.edb1c139.chunk.css",
+    "static/js/main.181ac3ab.chunk.js"
+  ]
+}
